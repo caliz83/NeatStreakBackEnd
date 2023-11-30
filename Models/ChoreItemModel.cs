@@ -7,6 +7,18 @@ namespace NeatStreakBackEnd.Models
 {
     public class ChoreItemModel
     {
-        
+        public int Id { get; set; }
+
+        public int UserId { get; set; }
+
+        public string? Title { get; set; }
+
+        public string? Date { get; set; }
+
+        public string? Category { get; set; }
+
+        public bool IsDeleted { get; set; }
+
+        public ChoreItemModel() {}
     }
 }

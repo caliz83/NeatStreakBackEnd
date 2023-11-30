@@ -2,7 +2,6 @@ Controllers *folder*
 	UserController
 	Login?/endpoints
 	Add a user/endpoints
-	Update a user
 	Delete a user
 
 ChoreController *file*

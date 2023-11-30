@@ -7,6 +7,6 @@ namespace NeatStreakBackEnd.Models.DTO
 {
     public class UserIdDTO
     {
-        
+        public int? UserId { get; set; }
     }
 }

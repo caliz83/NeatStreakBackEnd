@@ -3,18 +3,13 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace NeatStreakBackEnd.Models
+namespace NeatStreakBackEnd.Models.DTO
 {
-    public class UserModel
+    public class CreateAccountDTO
     {
         public int Id { get; set; }
-
         public string? Username { get; set; }
-
-        public string? Salt { get; set; }
-
-        public string? Hash { get; set; }
-
-        public UserModel() {}
+        public string? Password { get; set; }
+    
     }
 }
