@@ -20,26 +20,26 @@ namespace NeatStreakBackEnd.Controllers
             _data = dataFromService;
         }
 
-        //ENDPOINTS!!
-        //AddChoreItem
+        //ENDPOINTS!!        
+        //AddChoreItem (C)
         [HttpPost("AddChoreItem")]
         public bool AddChoreItem(ChoreItemModel newChoreItem){
             return _data.AddChoreItem(newChoreItem);
         }
 
-        //GetAllChoreItems
+        //GetAllChoreItems (R)
         [HttpGet("GetChoreItems")]
         public IEnumerable<ChoreItemModel>GetAllChoreItems(){
             return _data.GetAllChoreItems();
         }
 
-        //GetChoreItemsByCategory
+        //GetChoreItemsByCategory (R) kitchen, bathroom, bedroom, living room, other
         [HttpGet("GetItemsByCategory/{Category}")]
         public IEnumerable<ChoreItemModel>GetItemsByCategory(string Category){
             return _data.GetItemsByCategory(Category);
         }
 
-        //GetChoreItemByDueDate
+        //GetChoreItemByDueDate (R)
         [HttpGet("GetItemsByDueDate/{Date}")]
         public IEnumerable<ChoreItemModel>GetItemsByDueDate(string Date){
             return _data.GetItemsByDueDate(Date);
@@ -51,7 +51,13 @@ namespace NeatStreakBackEnd.Controllers
             return _data.GetCompletedChoreItems();
         }
 
-        //DeleteChoreItem (?)
+        // UpdateChores (U) (?)
+        // [HttpPost("UpdateChores")]
+        // public bool UpdateChores(string title, string category){
+        //     return _data.UpdateChores(title, category)
+        //} this would update the individual chore and not the list of chores so not what we want
+
+        //DeleteChoreItem (D) (?)
         [HttpPost("DeleteChoreItem/{ChoreItemToDelete}")]
         public bool DeleteChoreItem(ChoreItemModel ChoreDelete){
             return _data.DeleteChoreItem(ChoreDelete);

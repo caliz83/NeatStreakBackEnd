@@ -9,7 +9,7 @@ ChoreController *file*
 add chores (C)
 ViewAllChores (R)
 ViewChoresByCategory (R) (kitchen, bathroom, bedroom, yard, garage, etc)
-ViewChoresByDate (R)
+ViewChoresByDueDate (R)
 UpdateChores (U)
 DeleteChores (D)
 

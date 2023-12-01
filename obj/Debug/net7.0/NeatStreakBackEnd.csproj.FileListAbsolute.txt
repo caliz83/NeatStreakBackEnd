@@ -1,0 +1,7 @@
+C:\Users\lizg1\NeatStreakBackEnd\obj\Debug\net7.0\NeatStreakBackEnd.csproj.AssemblyReference.cache
+C:\Users\lizg1\NeatStreakBackEnd\obj\Debug\net7.0\NeatStreakBackEnd.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\lizg1\NeatStreakBackEnd\obj\Debug\net7.0\NeatStreakBackEnd.AssemblyInfoInputs.cache
+C:\Users\lizg1\NeatStreakBackEnd\obj\Debug\net7.0\NeatStreakBackEnd.AssemblyInfo.cs
+C:\Users\lizg1\NeatStreakBackEnd\obj\Debug\net7.0\NeatStreakBackEnd.csproj.CoreCompileInputs.cache
+C:\Users\lizg1\NeatStreakBackEnd\obj\Debug\net7.0\NeatStreakBackEnd.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\lizg1\NeatStreakBackEnd\obj\Debug\net7.0\NeatStreakBackEnd.MvcApplicationPartsAssemblyInfo.cache
