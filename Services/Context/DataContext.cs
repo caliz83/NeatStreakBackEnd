@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using NeatStreakBackEnd.Models;
-using Microsoft.EntityFrameworkCore; //TODO: figure out how to fix the dotnet-ef; it's already installed so not sure what the problem is. also, install whatever does the .vscode folder; i just copy/pasted from another project
+using Microsoft.EntityFrameworkCore; 
 
 namespace NeatStreakBackEnd.Services.Context
 {
