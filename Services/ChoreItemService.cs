@@ -40,7 +40,7 @@ namespace NeatStreakBackEnd.Services
 
         public IEnumerable<ChoreItemModel> GetCompletedChoreItems()
         {
-            return _context.ChoreInfo.Where(item => item.isCompleted);
+            return _context.ChoreInfo.Where(item => item.IsCompleted);
         }
 
         public IEnumerable<ChoreItemModel> GetItemsByCategory(string Category)

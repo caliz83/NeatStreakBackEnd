@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\lizg1\\NeatStreakBackEnd\\NeatStreakBackEnd.csproj": {}
+    "c:\\Users\\lizg1\\NeatStreakBackEnd\\NeatStreakBackEnd.csproj": {}
   },
   "projects": {
-    "C:\\Users\\lizg1\\NeatStreakBackEnd\\NeatStreakBackEnd.csproj": {
+    "c:\\Users\\lizg1\\NeatStreakBackEnd\\NeatStreakBackEnd.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\lizg1\\NeatStreakBackEnd\\NeatStreakBackEnd.csproj",
+        "projectUniqueName": "c:\\Users\\lizg1\\NeatStreakBackEnd\\NeatStreakBackEnd.csproj",
         "projectName": "NeatStreakBackEnd",
-        "projectPath": "C:\\Users\\lizg1\\NeatStreakBackEnd\\NeatStreakBackEnd.csproj",
+        "projectPath": "c:\\Users\\lizg1\\NeatStreakBackEnd\\NeatStreakBackEnd.csproj",
         "packagesPath": "C:\\Users\\lizg1\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\lizg1\\NeatStreakBackEnd\\obj\\",
+        "outputPath": "c:\\Users\\lizg1\\NeatStreakBackEnd\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\lizg1\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -39,6 +39,20 @@
           "targetAlias": "net7.0",
           "dependencies": {
             "Microsoft.AspNetCore.OpenApi": {
+              "target": "Package",
+              "version": "[7.0.10, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.10, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[7.0.10, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
               "target": "Package",
               "version": "[7.0.10, )"
             },

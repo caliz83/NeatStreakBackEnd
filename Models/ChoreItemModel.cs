@@ -7,6 +7,8 @@ namespace NeatStreakBackEnd.Models
 {
     public class ChoreItemModel
     {
+        public bool IsCompleted { get; set; }
+
         public int Id { get; set; }
 
         public int UserId { get; set; }

@@ -23,4 +23,6 @@ namespace NeatStreakBackEnd.Services.Context
             base.OnModelCreating(builder);
         }
     }
+
+    
 }
