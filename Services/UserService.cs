@@ -85,8 +85,8 @@ namespace NeatStreakBackEnd.Services
                 var secretKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes("tbd")); //TODO: figure out if @345 is important
                 var signingCredentials = new SigningCredentials(secretKey, SecurityAlgorithms.HmacSha256);
                 var tokeOptions = new JwtSecurityToken(
-                    issuer: "tbd - put ip address here", //TODO: put in ip address here
-                    audience: "tbd - put ip address here", //TODO: put in ip address here
+                    issuer: "https://localhost:7125", //TODO: put in ip address here
+                    audience: "https://localhost:7125", //TODO: put in ip address here
                     claims: new List<Claim>(),
                     expires: DateTime.Now.AddMinutes(30),
                     signingCredentials: signingCredentials
