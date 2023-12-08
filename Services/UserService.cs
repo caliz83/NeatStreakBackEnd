@@ -82,11 +82,11 @@ namespace NeatStreakBackEnd.Services
         public IActionResult Login(LoginDTO user){
             IActionResult Result = Unauthorized();
             if(DoesUserExist(user.Username)){
-                var secretKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes("tbd")); //TODO: figure out if @345 is important
+                var secretKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes("incrediblysecretcypher@1308"));
                 var signingCredentials = new SigningCredentials(secretKey, SecurityAlgorithms.HmacSha256);
                 var tokeOptions = new JwtSecurityToken(
-                    issuer: "https://localhost:7125", //TODO: put in ip address here
-                    audience: "https://localhost:7125", //TODO: put in ip address here
+                    issuer: "https://localhost:7125", 
+                    audience: "https://localhost:7125", 
                     claims: new List<Claim>(),
                     expires: DateTime.Now.AddMinutes(30),
                     signingCredentials: signingCredentials
