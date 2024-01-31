@@ -1,10 +1,28 @@
 using NeatStreakBackEnd.Services;
 using NeatStreakBackEnd.Services.Context;
-//using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
+builder.Services.AddScoped<UserService>();
+builder.Services.AddScoped<ChoreItemService>();
+builder.Services.AddScoped<PasswordService>();
+
+var connectionString = builder.Configuration.GetConnectionString("MyChoreString");
+builder.Services.AddDbContext<DataContext>(options => options.UseSqlServer(connectionString));
+
+//CORS policy resolution, call it again at bottom
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("ChorePolicy",
+    builder =>
+    {
+        builder.WithOrigins("http://localhost:7125") //match front end url
+        .AllowAnyHeader()
+        .AllowAnyMethod();
+    });
+});
 
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
@@ -21,6 +39,8 @@ if (app.Environment.IsDevelopment())
 }
 
 //app.UseHttpsRedirection();
+
+app.UseCors("ChorePolicy");
 
 app.UseAuthorization();
 

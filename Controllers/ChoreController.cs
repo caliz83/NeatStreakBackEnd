@@ -63,6 +63,14 @@ namespace NeatStreakBackEnd.Controllers
             return _data.DeleteChoreItem(ChoreDelete);
         }
 
-        
+        //GetStreak (R)
+        // [HttpGet("GetStreak")]
+        // public int GetStreak(ChoreItemModel GetStreak){
+        //     var streak = (DateTime currentDate - DateTime startDate) + 1;
+
+        //     //or if activity is completed, set bool = true, longest streak of trues... count++
+
+        // }
+
     }
 }

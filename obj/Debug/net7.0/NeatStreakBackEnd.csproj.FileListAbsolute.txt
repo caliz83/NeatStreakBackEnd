@@ -75,3 +75,5 @@ C:\Users\lizg1\NeatStreakBackEnd\obj\Debug\net7.0\refint\NeatStreakBackEnd.dll
 C:\Users\lizg1\NeatStreakBackEnd\obj\Debug\net7.0\NeatStreakBackEnd.pdb
 C:\Users\lizg1\NeatStreakBackEnd\obj\Debug\net7.0\NeatStreakBackEnd.genruntimeconfig.cache
 C:\Users\lizg1\NeatStreakBackEnd\obj\Debug\net7.0\ref\NeatStreakBackEnd.dll
+C:\Users\lizg1\NeatStreakBackEnd\obj\Debug\net7.0\NeatStreakBackEnd.sourcelink.json
+C:\Users\lizg1\NeatStreakBackEnd\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.InMemory.dll

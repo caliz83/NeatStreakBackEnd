@@ -85,8 +85,8 @@ namespace NeatStreakBackEnd.Services
                 var secretKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes("incrediblysecretcypher@1308"));
                 var signingCredentials = new SigningCredentials(secretKey, SecurityAlgorithms.HmacSha256);
                 var tokeOptions = new JwtSecurityToken(
-                    issuer: "https://localhost:7125", 
-                    audience: "https://localhost:7125", 
+                    issuer: "https://localhost:5193", 
+                    audience: "https://localhost:5193", 
                     claims: new List<Claim>(),
                     expires: DateTime.Now.AddMinutes(30),
                     signingCredentials: signingCredentials

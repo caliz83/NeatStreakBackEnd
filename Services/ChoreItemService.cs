@@ -10,7 +10,6 @@ namespace NeatStreakBackEnd.Services
 {
     public class ChoreItemService
     {
-
         //holds data _context
         private readonly DataContext _context;
 
