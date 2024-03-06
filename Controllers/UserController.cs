@@ -21,7 +21,7 @@ namespace NeatStreakBackEnd.Controllers
         }
 
         //add a user
-        [HttpGet("AddUser")]
+        [HttpPost("AddUser")]
         public bool AddUser(CreateAccountDTO UserToAdd) {
             return _data.AddUser(UserToAdd); 
         }
